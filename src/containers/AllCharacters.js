@@ -25,7 +25,7 @@ class AllCharacters extends PureComponent{
     const { characters, loading, err } = this.props;
     if(loading) return <h1>Loading...</h1>;
     if(err) return <h1>Error...</h1>;
-    return <Characters character={characters} />;
+    return <Characters characters={characters} />;
   }
 }
 
