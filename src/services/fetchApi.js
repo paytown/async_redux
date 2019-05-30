@@ -14,6 +14,7 @@ export const fetchApi = () => {
 };
 
 export const getCharacter = id => {
+  console.log('fetchAPI id', id);
   return fetch(`https://last-airbender-api.herokuapp.com/api/v1/characters/${id}`)
     .then(res => ([res.ok, res.json()]))
     .then(([ok, json]) => {
@@ -21,10 +22,10 @@ export const getCharacter = id => {
 
       return json;
     })
-    .then(json => json.map(character => ({
+    .then(character => ({
       id: character._id,
       name: character.name,
       photoUrl: character.photoUrl,
       affiliation: character.affiliation
-    })));
+    }));
 };

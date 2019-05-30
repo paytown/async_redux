@@ -7,9 +7,9 @@ import { fetchCharacter } from '../actions/characterDetailAction';
 
 class CharacterById extends PureComponent {
   static propTypes = {
-    character: PropTypes.object.isRequired,
-    loading: PropTypes.bool.isRequired,
-    fetch: PropTypes.func.isRequired
+    character: PropTypes.object,
+    loading: PropTypes.bool,
+    fetch: PropTypes.func
   }
 
   componentDidMount() {
