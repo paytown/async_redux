@@ -1,7 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App snapshot test for app 1`] = `
-<Fragment>
-  <Connect(AllCharacters) />
-</Fragment>
+<BrowserRouter>
+  <Switch>
+    <Route
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "displayName": "Connect(AllCharacters)",
+          "type": [Function],
+        }
+      }
+      exact={true}
+      path="/"
+    />
+    <Route
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "displayName": "Connect(CharacterById)",
+          "type": [Function],
+        }
+      }
+      exact={true}
+      path="/:id"
+    />
+  </Switch>
+</BrowserRouter>
 `;
