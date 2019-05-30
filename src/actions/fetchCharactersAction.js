@@ -10,23 +10,3 @@ export const fetchCharacters = () => ({
   error: FETCH_CHARACTERS_ERR,
   payload: fetchApi()
 });
-
-// export const fetchCharacters = () => dispatch => {
-//   dispatch({
-//     type: FETCH_CHARACTERS_LOADING
-//   });
-
-//   return fetchApi()
-//     .then(character => {
-//       dispatch({
-//         type: FETCH_CHARACTERS,
-//         payload: character
-//       });
-//     })
-//     .catch(err => {
-//       dispatch({
-//         type: FETCH_CHARACTERS_ERR,
-//         payload: err
-//       });
-//     });
-// };
