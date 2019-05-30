@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App snapshot test for app 1`] = `
+<Fragment>
+  <Connect(AllCharacters) />
+</Fragment>
+`;
