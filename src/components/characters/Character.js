@@ -5,7 +5,7 @@ function Character({ character }) {
   return (
     <div>
       <img src={character.photoUrl} />
-      <p>{character.name} hi</p>
+      <p>{character.name}</p>
     </div>
   );
 }
